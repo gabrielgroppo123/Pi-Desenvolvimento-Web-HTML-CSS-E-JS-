@@ -1,0 +1,46 @@
+<div class="content-container">
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Sobrenome</th>
+                <th>Data de Nascimento</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (pessoa of listaPessoas; track pessoa)
+            <tr>
+                <td>1</td>
+                <td>Enzo</td>
+                <td>Silva</td>
+                <td>15/03/2002</td>
+                <td>
+                    <button class="btn-editar">Editar</button>
+                    <button class="btn-excluir">Excluir</button>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Valentina</td>
+                <td>Oliveira</td>
+                <td>22/07/2005</td>
+                <td>
+                    <button class="btn-editar" [routerLink]= "['alterar', pessoa.id]">Editar</button>
+                    <button class="btn-excluir">Excluir</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Pedro</td>
+                <td>Santos</td>
+                <td>10/12/2001</td>
+                <td>
+                    <button class="btn-editar">Editar</button>
+                    <button class="btn-excluir">Excluir</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <button class="btn-excluir">Incluir</button>
+</div>
