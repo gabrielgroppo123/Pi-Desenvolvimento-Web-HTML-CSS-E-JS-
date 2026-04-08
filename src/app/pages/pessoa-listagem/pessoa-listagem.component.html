@@ -10,7 +10,7 @@
             </tr>
         </thead>
         <tbody>
-            @for (pessoa of listaPessoas; track pessoa)
+            @for (pessoa of listaPessoas; track pessoa){
             <tr>
                 <td>1</td>
                 <td>Enzo</td>
@@ -27,7 +27,7 @@
                 <td>Oliveira</td>
                 <td>22/07/2005</td>
                 <td>
-                    <button class="btn-editar" [routerLink]= "['alterar', pessoa.id]">Editar</button>
+                    <a [routerLink]="['alterar', pessoa.id]" class="btn-editar">Editar</a>
                     <button class="btn-excluir">Excluir</button>
                 </td>
             </tr>
@@ -39,7 +39,7 @@
                     <button class="btn-editar">Editar</button>
                     <button class="btn-excluir">Excluir</button>
                 </td>
-            </tr>
+            </tr>}
         </tbody>
     </table>
     <button class="btn-excluir">Incluir</button>

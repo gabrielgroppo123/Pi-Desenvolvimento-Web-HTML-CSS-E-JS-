@@ -1,11 +1,12 @@
 import { Component, OnInit } from "@angular/core";
 import { PessoaService } from "../../core/services/pessoa.service";
 import { Pessoa } from "../../core/types/types";
+import { Router, RouterModule } from "@angular/router";
 @Component({
     selector: 'app-pessoa-listagem',
     standalone: true,
-    imports: [],
-    templateUrl: './pessoa-listagem.component.html',
+    imports: [RouterModule],
+    templateUrl: "./pessoa-listagem.component.html",
     styleUrl: './pessoa-listagem.component.css'
 })
 
