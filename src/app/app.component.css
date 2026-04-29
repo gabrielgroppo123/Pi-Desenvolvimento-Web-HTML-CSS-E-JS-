@@ -1,13 +1,20 @@
-h1{
-    font-size: 5em;
+h1 {
+    font-size: 2em;
     color: blue;
 }
 
-h3{
+h3 {
     font-size: 3em;
+    color: green;
+}
+div{
+    font-size: 1rem;
+    font-weight: bold;
+    color: #007bff;
 }
 
-.input-simples{
+.input-simples,
+.input-submeter {
     width: 100%;
     box-sizing: border-box;
     padding: 8px 12px;
@@ -17,8 +24,7 @@ h3{
     margin-bottom: 20px;
 }
 
-.input-submeter{
-    width: 100%;
+.input-submeter {
     padding: 10px;
     font-size: 16px;
     color: #fff;
@@ -27,15 +33,15 @@ h3{
     border-radius: 4px;
     cursor: pointer;
     margin: 0 auto;
-}   
-
-.mensagem{
-    margin: 16px auto;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 16px;
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #333;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
+.mensagem{
+      margin: 16px auto;
+      border: 1px solid #740808;
+      border-radius: 8px;
+      padding: 16px;
+      font-size: 16px;
+      font-family: 'Arial', sans-serif;
+      color: #333;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     }
+    

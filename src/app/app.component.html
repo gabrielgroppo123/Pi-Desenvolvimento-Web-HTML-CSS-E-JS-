@@ -1,11 +1,31 @@
 <app-header></app-header>
-<h1>{{titulo}}</h1>
-<a>Nome:</a>
-<input type="text" class="input-simples" (keyup) = "updateField($event)" (keyup) = "onKeyUp($event)">
-<button [disabled] = "botaoDesabilitado" (click) = "onBotaoClicado()" class="input-submeter">{{textoBotao}}</button>
+<router-outlet/>
+<app-footer></app-footer>
 
+<!--
+<h1>Olá {{titulo}}!</h1>
+<h3>Bem-vindos ao angular!</h3>
+<label for="nome" placeholder="Digite seu nome">Nome:</label>
+<input class="input-simples" id="nome" name="nome" type="text" 
+(keyup)="onKeyUp($event)" [(ngModel)]="nome" />
+<label for="sobrenome" placeholder="Digite seu sobrenome">
+  Sobrenome:</label>
+<input class="input-simples" id="sobrenome" name="sobrenome" 
+type="text" [(ngModel)]="sobrenome" />
+
+<label for="cidade" placeholder="Digite a cidade">
+  Cidade:</label>
+<input class="input-simples" id="cidade" name="cidade" 
+type="text" [(ngModel)]="cidade" />
+
+<button class="input-submeter" [disabled]="botaoDesabilitado" 
+(click)="onBotaoClicado()">
+
+
+  {{ textoBotao }}
+</button>
 @if(mensagem){
-    <div>{{mensagem}}</div>
+<div class="mensagem">{{mensagem}}</div>
 }
 <app-footer></app-footer>
-<router-outlet/>
+-->
